@@ -1,0 +1,5 @@
+# Create AkinaySau(akinaysau@gmail.com)
+routing:
+    path: routing
+    controller: Sau\WP\Theme\ThemeBundle\Controller\User::index
+    methods: GET

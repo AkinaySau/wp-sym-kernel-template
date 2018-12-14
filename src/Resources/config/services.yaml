@@ -1,0 +1,12 @@
+# Create AkinaySau(akinaysau@gmail.com)
+services:
+    Sau\WP\Theme\ThemeBundle\:
+        resource: '../../*'
+        exclude: '../../{Twig,DependencyInjection,Resources,ThemeBundle.php,}'
+        public: true
+    Sau\WP\Theme\ThemeBundle\Controller\:
+        resource: '../../Controller/*'
+        tags: ['controller.service_arguments']
+    Sau\WP\Theme\ThemeBundle\Twig\:
+        resource: '../../Twig/*'
+        tags: ['twig.extension']
